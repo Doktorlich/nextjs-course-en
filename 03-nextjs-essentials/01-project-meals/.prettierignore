@@ -1,0 +1,30 @@
+
+# Сборка и зависимости
+node_modules
+dist
+build
+out
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Конфиги и логи
+*.log
+.env
+.npmrc
+
+# Генерируемые файлы (если есть)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Статика (картинки, шрифты)
+public/fonts
+public/images
+*.svg
+*.ico
+
+# Папки IDE
+.vscode
+.idea
