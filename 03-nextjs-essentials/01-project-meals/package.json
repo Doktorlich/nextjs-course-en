@@ -1,26 +1,27 @@
 {
-  "name": "01-project-meals",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "better-sqlite3": "^12.10.0",
-    "next": "16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.6",
-    "typescript": "^5"
-  }
+    "name": "01-project-meals",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "turbo": "next dev --turbo",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint"
+    },
+    "dependencies": {
+        "better-sqlite3": "^12.10.0",
+        "next": "16.2.6",
+        "react": "19.2.4",
+        "react-dom": "19.2.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^19",
+        "@types/react-dom": "^19",
+        "babel-plugin-react-compiler": "1.0.0",
+        "eslint": "^9",
+        "eslint-config-next": "16.2.6",
+        "typescript": "^5"
+    }
 }
