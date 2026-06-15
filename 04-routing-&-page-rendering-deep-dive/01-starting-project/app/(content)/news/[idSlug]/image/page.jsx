@@ -1,5 +1,5 @@
-import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound } from "next/navigation";
+import { DUMMY_NEWS } from "@/dummy-news";
 
 export default async function ImagePage({ params }) {
     const { idSlug } = await params;

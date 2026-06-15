@@ -1,11 +1,11 @@
+import Link from "next/link";
+import NewsList from "@/components/news-list";
 import {
     getAvailableNewsMonths,
     getAvailableNewsYears,
     getNewsForYear,
     getNewsForYearAndMonth,
 } from "@/lib/news";
-import Link from "next/link";
-import NewsList from "@/components/news-list";
 
 export default async function FilteredNewsPage({ params }) {
     const { ...filterSlug } = await params;
