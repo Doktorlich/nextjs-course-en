@@ -1,9 +1,15 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
-export default function NewsList({ news }) {
+export default async function NewsList({ news }) {
+
+    if (!news) {
+        return notFound();
+    }
+    /* eslint-disable react/prop-types */
     return (
         <ul className={"news-list"}>
-            {news.map(newsItem => {
+            {news?.map(newsItem => {
                 return (
                     <li key={newsItem.id}>
                         <Link href={`/news/${newsItem.slug}`}>

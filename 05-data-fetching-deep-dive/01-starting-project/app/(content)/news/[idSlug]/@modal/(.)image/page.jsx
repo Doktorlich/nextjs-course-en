@@ -1,20 +1,18 @@
-"use client";
-
 import { notFound, useRouter } from "next/navigation";
-import { DUMMY_NEWS } from "@/dummy-news";
+import ModalBackdrop from "@/components/ModalBackdrop";
+import { getNewsItem } from "@/lib/news";
 
 export default async function InterceptedImagePage({ params }) {
-    const router = useRouter();
-
     const { idSlug } = await params;
-    const news = DUMMY_NEWS.find(item => item.slug === idSlug);
+    const news = await getNewsItem(idSlug)
+    // const news = DUMMY_NEWS.find(item => item.slug === idSlug);
 
     if (!news) {
         return notFound();
     }
     return (
         <>
-            <div className={"modal-backdrop"} onClick={router.back}></div>
+            <ModalBackdrop />
             <dialog className={"modal"} open>
                 <div className={"fullscreen-image"}>
                     <img src={`/images/news/${news.image}`} alt={news.title} />
