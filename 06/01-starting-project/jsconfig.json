@@ -1,7 +1,13 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "compilerOptions": {
+        "checkJs": true,
+        "jsx": "preserve",
+        "target": "ES2022",
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "exclude": ["node_modules", ".next", "dist"]
 }
